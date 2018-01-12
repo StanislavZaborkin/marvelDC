@@ -1,0 +1,38 @@
+{
+  "marvel": {
+    "movies": {
+      "Avengers": {
+        "year": "2012",
+        "country": "USA",
+        "description": "Loki, Thor's step-brother, returns, and this time he is not alone. The Earth is on the verge of enslavement, and only the best of the best can save humanity.",
+        "cast": ["sdsa", "sdfsaf", "sdas"]
+      },
+      "Spider-man": {
+        "year": "2017",
+        "country": "USA",
+        "description": "Peter Parker coming back home."
+      }
+    },
+    "comics": {
+
+    },
+    "cartoons": {
+
+    }
+  },
+  "dc": {
+    "movies": {
+      "Avengers": {
+        "year": "2012",
+        "country": "USA",
+        "description": "Loki, Thor's step-brother, returns"
+      }
+    },
+    "comics": {
+
+    },
+    "cartoons": {
+
+    }
+  }
+}
