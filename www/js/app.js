@@ -5,6 +5,9 @@
 // the 2nd parameter is an array of 'requires'
 angular.module('starter', ['ionic'])
 .controller("mainCrl", function ($scope, $http) {
+  //https://www.w3schools.com/angular/tryit.asp?filename=try_ng_routing
+  //https://www.w3schools.com/angular/angular_routing.asp
+
   $scope.data1 = [];
   $scope.click = false;
 
