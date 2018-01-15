@@ -36,18 +36,19 @@
           <img src="dc.jpg" alt="" ng-click="getDCData()">
         </div>
           <div ng-show="click">
-            <div>Movies</div>
-            <div>Cartoons</div>
-            <div>Comics</div>
+            <span><button class="button" ng-click="showMovies()">Movies</button></span>
+            <span><button class="button">Cartoons</button></span>
+            <span><button class="button">Comics</button></span>
           </div>
-          <div ng-repeat="movie in clone1.movies">
-            <div ng-repeat="hero in movie.cast">
-
-              {{hero}}
-            </div>
+          <div ng-repeat="movie in clone1.movies" ng-show="click1">
             <div><span class="field">Year: </span>{{' ' + movie.year}}</div>
             <div><span class="field">Country: </span>{{' ' + movie.country}}</div>
             <div><span class="field">Description:</span>{{' ' + movie.description}}</div>
+            <span class="field">Cast:</span>
+            <span ng-repeat="hero in movie.cast" ng-show="click1">
+              {{hero + ' '}}<button class="ion-information-circled" ng-click="someFunction(hero)"></button>{{', '}}
+            </span>
+            <br><hr>
           </div>
 
         </div>

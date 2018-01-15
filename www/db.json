@@ -1,23 +1,34 @@
 {
   "marvel": {
     "movies": {
-      "Avengers": {
-        "year": "2012",
+      "Captain America: Civil War": {
+        "year": "2016",
         "country": "USA",
-        "description": "Loki, Thor's step-brother, returns, and this time he is not alone. The Earth is on the verge of enslavement, and only the best of the best can save humanity.",
-        "cast": ["sdsa", "sdfsaf", "sdas"]
+        "description": "Political involvement in the Avengers' activities causes a rift between Captain America and Iron Man.",
+        "cast": ["Captain America", "Iron man", "Black Widow", "Winter Soldier", "Falcon", "War Machine", "Hawkeye", "Black Panther", "Vision", "Scarlet Witch", "Ant-man", "Spider-man"]
       },
-      "Spider-man": {
+      "Spider-man: Homecoming": {
         "year": "2017",
         "country": "USA",
-        "description": "Peter Parker coming back home."
+        "description": "Peter Parker balances his life as an ordinary high school student in Queens with his superhero alter-ego Spider-Man.",
+        "cast": ["Spider-man","Vulture", "Iron man", "Shocker", "Flash", "Captain America"]
       }
     },
     "comics": {
-
     },
     "cartoons": {
-
+      "The Incredible Hulk": {
+        "year": "1978",
+        "country": "USA",
+        "description": "The Incredible Hulk is an American television series based on the Marvel Comics character The Hulk.",
+        "cast": ["Hulk", "Bill Bixby", "Jack McGee", "Ted Cassidy", "Charles Napier"]
+      },
+      "Spider-man": {
+        "year": "1994",
+        "country": "USA",
+        "description": "pider-Man, also known as Spider-Man: The Animated Series, is an American animated television series based on the Marvel Comics superhero of the same name.",
+        "cast": ["Spider-man","Green Goblin", "Black cat", "Kingpin", "Venom", "Vulture", "Dormammu", "Carnage"]
+      }
     }
   },
   "dc": {
