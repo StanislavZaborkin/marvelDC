@@ -35,12 +35,28 @@
         <div class="right">
           <img src="dc.jpg" alt="" ng-click="getDCData()">
         </div>
-          <div ng-show="click">
-            <span><button class="button" ng-click="showMovies()">Movies</button></span>
-            <span><button class="button">Cartoons</button></span>
-            <span><button class="button">Comics</button></span>
+          <div ng-show="clickM">
+            <span><button class="button" ng-click="showMarvelMovies()">Movies</button></span>
+            <span><button class="button" ng-click="showMarvelCartoons()">Cartoons</button></span>
+            <span><button class="button" ng-click="showMarvelComics()">Comics</button></span>
+          </div>
+          <div ng-show="clickD">
+            <span><button class="button" ng-click="showDCMovies()">Movies</button></span>
+            <span><button class="button" ng-click="showDCCartoons()">Cartoons</button></span>
+            <span><button class="button" ng-click="showDCComics()">Comics</button></span>
           </div>
           <div ng-repeat="movie in clone1.movies" ng-show="click1">
+            <div><span class="field">Year: </span>{{' ' + movie.year}}</div>
+            <div><span class="field">Country: </span>{{' ' + movie.country}}</div>
+            <div><span class="field">Description:</span>{{' ' + movie.description}}</div>
+            <span class="field">Cast:</span>
+            <span ng-repeat="hero in movie.cast" ng-show="click1">
+              {{hero + ' '}}<button class="ion-information-circled" ng-click="getMarvelHero(hero)"></button>{{', '}}
+            </span>
+            <br><hr>
+          </div>
+
+          <div ng-repeat="movie in clone1.movies" ng-show="click2">
             <div><span class="field">Year: </span>{{' ' + movie.year}}</div>
             <div><span class="field">Country: </span>{{' ' + movie.country}}</div>
             <div><span class="field">Description:</span>{{' ' + movie.description}}</div>
