@@ -14,6 +14,8 @@
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-route.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular-route.min.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
@@ -28,6 +30,16 @@
         <h1 class="title">Ionic</h1>
       </ion-header-bar>
       <ion-content class="has-header" ng-controller="mainCrl">
+        <div ng-app="myApp">
+          <p><a href="#/!">Main</a></p>
+
+          <a href="#!red">Red</a>
+          <a href="#!green">Green</a>
+          <a href="#!blue">Blue</a>
+
+          <ng-view></ng-view>
+        </div>
+
         <div class="main">
         <div class="left">
           <img src="marvel.jpg" alt="" ng-click="getMarvelData()">
@@ -45,7 +57,10 @@
             <span><button class="button" ng-click="showDCCartoons()">Cartoons</button></span>
             <span><button class="button" ng-click="showDCComics()">Comics</button></span>
           </div>
-          <div ng-repeat="movie in clone1.movies" ng-show="click1">
+
+          <div ng-repeat="movie in clone1.movies" ng-show="clickM">
+            <!--<div><span class="field">{{movie}}</span></div>-->
+            <div><span class="field">Name: </span>{{' ' + movie.name}}</div>
             <div><span class="field">Year: </span>{{' ' + movie.year}}</div>
             <div><span class="field">Country: </span>{{' ' + movie.country}}</div>
             <div><span class="field">Description:</span>{{' ' + movie.description}}</div>
@@ -56,7 +71,8 @@
             <br><hr>
           </div>
 
-          <div ng-repeat="movie in clone1.movies" ng-show="click2">
+          <div ng-repeat="movie in clone1.movies" ng-show="clickD">
+            <div><span class="field">Name: </span>{{' ' + movie.name}}</div>
             <div><span class="field">Year: </span>{{' ' + movie.year}}</div>
             <div><span class="field">Country: </span>{{' ' + movie.country}}</div>
             <div><span class="field">Description:</span>{{' ' + movie.description}}</div>
