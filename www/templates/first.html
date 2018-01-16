@@ -1,0 +1,18 @@
+
+<div ng-repeat="movie in heroInfo track by $index">
+  <div><span class="field">Name: </span>{{' ' + movie.name}}</div>
+  <div><span class="field">Year: </span>{{' ' + movie.year}}</div>
+  <div><span class="field">Country: </span>{{' ' + movie.country}}</div>
+  <div><span class="field">Description:</span>{{' ' + movie.description}}</div>
+  <br><hr>
+</div>
+
+{{heroInfo}}
+
+<div ng-app="starter">
+  <div  ng-controller="newPage">
+    {{message}}
+  </div>
+</div>
+
+

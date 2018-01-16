@@ -1,12 +1,13 @@
 angular.module('starter', ['ionic', 'ngRoute'])
-.controller("mainCrl", function ($scope, $http) {
-  //https://www.w3schools.com/angular/tryit.asp?filename=try_ng_routing
-  //https://www.w3schools.com/angular/angular_routing.asp
+.controller("mainCrl", function ($scope, $http, $routeParams) {
+
+  $scope.param = $routeParams.param;
 
   $scope.data1 = [];
   $scope.clickM = false;
   $scope.clickD = false;
   $scope.click1 = false;
+  $scope.heroInfo = [];
 
   $scope.getMarvelData = function () {
     $scope.clickD = false;
@@ -53,15 +54,31 @@ angular.module('starter', ['ionic', 'ngRoute'])
   };
 
   $scope.getMarvelHero = function (hero) {
-    console.clear();
+   // console.clear();
+    $scope.heroInfo.length = 0;
 
     for (key in $scope.clone1.movies) {
       $scope.filteredArr.push($scope.clone1.movies[key].cast);
       if (~$scope.clone1.movies[key].cast.indexOf(hero)){
-        console.log($scope.clone1.movies[key]);
+       // console.log($scope.clone1.movies[key]);
+        $scope.heroInfo.push($scope.clone1.movies[key]);
       }
-
     }
   }
-});
+}).controller("newPage", function ($scope) {
+  $scope.message = 'Hi, AngularJS!';
+}).config( ['$routeProvider', function($routeProvider) {
+  $routeProvider
+    .when('/first/: param?', {
+      templateUrl: 'templates/first.html',
+      controller:'mainCrl'
+    })
+    .when('/second', {
+      templateUrl: 'templates/second.html',
+      controller: 'newPage'
+    })
+    .otherwise({
+      redirectTo: 'main.html'
+    });
+}]);
 
