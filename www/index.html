@@ -31,10 +31,11 @@
       </ion-header-bar>
       <ion-content class="has-header" ng-controller="mainCrl">
 
-          <p>Перейти к <a href="templates/first.html">первой</a> или <a href="#second">второй странице</a>.</p>
+         <!-- <p>Перейти к <a href="#first">первой</a> или <a href="#second">второй странице</a>.</p>-->
+
           <div ng-view></div>
 
-        <div class="main">
+        <div class="main" ng-show="mainDiv">
         <div class="left">
           <img src="marvel.jpg" alt="" ng-click="getMarvelData()">
         </div>
@@ -60,7 +61,7 @@
             <span class="field">Cast:</span>
             <span ng-repeat="hero in movie.cast" ng-show="click1">
 
-              {{hero + ' '}}<a href="templates/first.html"><button class="ion-information-circled" ng-click="getMarvelHero(hero)">
+              {{hero + ' '}}<a href="#movies"><button class="ion-information-circled" ng-click="getMarvelHero(hero)">
 
             </button></a>{{', '}}
             </span>

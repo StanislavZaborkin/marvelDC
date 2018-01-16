@@ -1,13 +1,13 @@
 angular.module('starter', ['ionic', 'ngRoute'])
-.controller("mainCrl", function ($scope, $http, $routeParams) {
-
-  $scope.param = $routeParams.param;
+.controller("mainCrl", function ($scope, $http) {
 
   $scope.data1 = [];
   $scope.clickM = false;
   $scope.clickD = false;
   $scope.click1 = false;
   $scope.heroInfo = [];
+
+  $scope.mainDiv = true;
 
   $scope.getMarvelData = function () {
     $scope.clickD = false;
@@ -64,18 +64,17 @@ angular.module('starter', ['ionic', 'ngRoute'])
         $scope.heroInfo.push($scope.clone1.movies[key]);
       }
     }
+    $scope.mainDiv = false;
   }
-}).controller("newPage", function ($scope) {
-  $scope.message = 'Hi, AngularJS!';
 }).config( ['$routeProvider', function($routeProvider) {
   $routeProvider
-    .when('/first/: param?', {
-      templateUrl: 'templates/first.html',
-      controller:'mainCrl'
+    .when('/movies', {
+      templateUrl: 'templates/movies.html',
+      //controller: 'mainCrl'
     })
     .when('/second', {
       templateUrl: 'templates/second.html',
-      controller: 'newPage'
+      //controller: 'mainCrl'
     })
     .otherwise({
       redirectTo: 'main.html'
