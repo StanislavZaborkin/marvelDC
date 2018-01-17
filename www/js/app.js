@@ -5,10 +5,11 @@ angular.module('starter', ['ionic', 'ngRoute'])
   $scope.click1 = false;
   $scope.heroInfo = [];
   $scope.clickH = false;
-  $scope.showMainDiv = false;
+  $scope.showMainDiv = true;
+  $scope.showMovies = false;
 
   $scope.check = function () {
-    return (!$scope.showMainDiv);
+    return ($scope.showMainDiv = false, $scope.showMovies = true);
   };
 
   $http({
