@@ -1,22 +1,39 @@
 angular.module('starter', ['ionic', 'ngRoute'])
 .controller("mainCrl", function ($scope, $http) {
 
-  $scope.data1 = [];
-  $scope.clickM = false;
-  $scope.clickD = false;
+  $scope.data = [];
   $scope.click1 = false;
   $scope.heroInfo = [];
+  $scope.clickH = false;
+  $scope.showMainDiv = false;
 
-  $scope.mainDiv = true;
+  $scope.check = function () {
+    return (!$scope.showMainDiv);
+  };
+
+  $http({
+    method: 'GET',
+    url: '../db.json'
+  }).then(function successCallback(response) {
+    $scope.data.push(response.data);
+    $scope.clone1 = [];
+    $scope.clone2 = [];
+    for (var key in $scope.data) {
+      $scope.clone1 = $scope.data[key].marvel;
+      $scope.clone2 = $scope.data[key].dc;
+    }
+  }, function errorCallback(response) {
+    console.log('error' + response.statusText);
+  });
 
   $scope.getMarvelData = function () {
-    $scope.clickD = false;
     $scope.clickM = true;
-    $scope.clone1 = [];
-    $scope.filteredArr = [];
-      for (var key in $scope.data1) {
-        $scope.clone1 = $scope.data1[key].marvel;
-      }
+    $scope.clickD = false;
+  };
+
+  $scope.getDCData = function () {
+    $scope.clickM = false;
+    $scope.clickD = true;
   };
 
   $scope.showMarvelCartoons = function () {
@@ -25,6 +42,7 @@ angular.module('starter', ['ionic', 'ngRoute'])
 
   $scope.showMarvelMovies = function () {
     $scope.click1 = true;
+    $scope.mainDiv = false;
   };
 
   $scope.showDCCartoons = function () {
@@ -35,27 +53,18 @@ angular.module('starter', ['ionic', 'ngRoute'])
     $scope.clickD = true;
   };
 
-  $http({
-    method: 'GET',
-    url: '../db.json'
-  }).then(function successCallback(response) {
-    $scope.data1.push(response.data);
-  }, function errorCallback(response) {
-    console.log('error' + response.statusText);
-  });
+  $scope.showMarvelComics = function () {
 
-  $scope.getDCData = function () {
-    $scope.clickM = false;
-    $scope.clickD = true;
-      for (var key in $scope.data1) {
-        $scope.clone1 = $scope.data1[key].dc;
-      }
-    console.log($scope.clone1);
+  };
+  $scope.showDCComics = function () {
+
   };
 
   $scope.getMarvelHero = function (hero) {
    // console.clear();
     $scope.heroInfo.length = 0;
+    $scope.clickH = true;
+    $scope.filteredArr = [];
 
     for (key in $scope.clone1.movies) {
       $scope.filteredArr.push($scope.clone1.movies[key].cast);
@@ -68,16 +77,14 @@ angular.module('starter', ['ionic', 'ngRoute'])
   }
 }).config( ['$routeProvider', function($routeProvider) {
   $routeProvider
-    .when('/movies', {
-      templateUrl: 'templates/movies.html',
-      //controller: 'mainCrl'
+    .when('/marvel_movies', {
+      templateUrl: 'templates/marvel_movies.html'
     })
-    .when('/second', {
-      templateUrl: 'templates/second.html',
-      //controller: 'mainCrl'
+    .when('/dc_movies', {
+      templateUrl: 'templates/dc_movies.html'
     })
     .otherwise({
-      redirectTo: 'main.html'
+      redirectTo: 'index.html'
     });
 }]);
 

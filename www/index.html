@@ -31,54 +31,24 @@
       </ion-header-bar>
       <ion-content class="has-header" ng-controller="mainCrl">
 
-         <!-- <p>Перейти к <a href="#first">первой</a> или <a href="#second">второй странице</a>.</p>-->
-
           <div ng-view></div>
 
-        <div class="main" ng-show="mainDiv">
+        <div class="main" ng-show="check()">
         <div class="left">
-          <img src="marvel.jpg" alt="" ng-click="getMarvelData()">
+          <img src="marvel.jpg" ng-click="getMarvelData()">
         </div>
         <div class="right">
-          <img src="dc.jpg" alt="" ng-click="getDCData()">
+          <img src="dc.jpg" ng-click="getDCData()">
         </div>
           <div ng-show="clickM">
-            <span><button class="button" ng-click="showMarvelMovies()">Movies</button></span>
-            <span><button class="button" ng-click="showMarvelCartoons()">Cartoons</button></span>
-            <span><button class="button" ng-click="showMarvelComics()">Comics</button></span>
+            <span><a href="#marvel_movies"><button class="button marvel" ng-click="showMarvelMovies()"><h3>Movies</h3></button></a></span>
+            <span><button class="button marvel" ng-click="showMarvelCartoons()"><h3>Cartoons</h3></button></span>
+            <span><button class="button marvel" ng-click="showMarvelComics()"><h3>Comics</h3></button></span>
           </div>
           <div ng-show="clickD">
-            <span><button class="button" ng-click="showDCMovies()">Movies</button></span>
-            <span><button class="button" ng-click="showDCCartoons()">Cartoons</button></span>
-            <span><button class="button" ng-click="showDCComics()">Comics</button></span>
-          </div>
-
-          <div ng-repeat="movie in clone1.movies" ng-show="click1">
-            <div><span class="field">Name: </span>{{' ' + movie.name}}</div>
-            <div><span class="field">Year: </span>{{' ' + movie.year}}</div>
-            <div><span class="field">Country: </span>{{' ' + movie.country}}</div>
-            <div><span class="field">Description:</span>{{' ' + movie.description}}</div>
-            <span class="field">Cast:</span>
-            <span ng-repeat="hero in movie.cast" ng-show="click1">
-
-              {{hero + ' '}}<a href="#movies"><button class="ion-information-circled" ng-click="getMarvelHero(hero)">
-
-            </button></a>{{', '}}
-            </span>
-
-            <br><hr>
-          </div>
-
-          <div ng-repeat="movie in clone1.movies" ng-show="clickD">
-            <div><span class="field">Name: </span>{{' ' + movie.name}}</div>
-            <div><span class="field">Year: </span>{{' ' + movie.year}}</div>
-            <div><span class="field">Country: </span>{{' ' + movie.country}}</div>
-            <div><span class="field">Description:</span>{{' ' + movie.description}}</div>
-            <span class="field">Cast:</span>
-            <span ng-repeat="hero in movie.cast" ng-show="click1">
-              {{hero + ' '}}<button class="ion-information-circled" ng-click="someFunction(hero)"></button>{{', '}}
-            </span>
-            <br><hr>
+            <span><a href="#dc_movies"><button class="button dc" ng-click="showDCMovies()"><h3>Movies</h3></button></a></span>
+            <span><button class="button dc" ng-click="showDCCartoons()"><h3>Cartoons</h3></button></span>
+            <span><button class="button dc" ng-click="showDCComics()"><h3>Comics</h3></button></span>
           </div>
 
         </div>

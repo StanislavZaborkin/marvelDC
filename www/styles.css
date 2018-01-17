@@ -35,3 +35,17 @@ img {
 .field {
   color: lawngreen;
 }
+
+.marvel {
+  background-color: red;
+}
+.dc {
+  background-color: blue;
+  color: white;
+}
+.button {
+  margin: 5% 5% 0 0;
+}
+h3 {
+  color: white;
+}

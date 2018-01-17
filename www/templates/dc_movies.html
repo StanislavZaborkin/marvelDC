@@ -1,9 +1,11 @@
-
-<div ng-repeat="movie in heroInfo track by $index">
+<div ng-repeat="movie in clone2.movies">
   <div><span class="field">Name: </span>{{' ' + movie.name}}</div>
   <div><span class="field">Year: </span>{{' ' + movie.year}}</div>
   <div><span class="field">Country: </span>{{' ' + movie.country}}</div>
   <div><span class="field">Description:</span>{{' ' + movie.description}}</div>
+  <span class="field">Cast:</span>
+  <span ng-repeat="hero in movie.cast" ng-show="click1">
+              {{hero + ' '}}<button class="ion-information-circled" ng-click="someFunction(hero)"></button>{{', '}}
+            </span>
   <br><hr>
 </div>
-
