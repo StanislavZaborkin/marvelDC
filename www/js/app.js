@@ -62,7 +62,6 @@ angular.module('starter', ['ionic', 'ngRoute'])
   };
 
   $scope.getMarvelHero = function (hero) {
-   // console.clear();
     $scope.heroInfo.length = 0;
     $scope.clickH = true;
     $scope.filteredArr = [];
@@ -70,7 +69,6 @@ angular.module('starter', ['ionic', 'ngRoute'])
     for (key in $scope.clone1.movies) {
       $scope.filteredArr.push($scope.clone1.movies[key].cast);
       if (~$scope.clone1.movies[key].cast.indexOf(hero)){
-       // console.log($scope.clone1.movies[key]);
         $scope.heroInfo.push($scope.clone1.movies[key]);
       }
     }
@@ -84,8 +82,20 @@ angular.module('starter', ['ionic', 'ngRoute'])
     .when('/dc_movies', {
       templateUrl: 'templates/dc_movies.html'
     })
+    .when('/marvel_cartoons', {
+      templateUrl: 'templates/marvel_cartoons.html'
+    })
+    .when('/marvel_comics', {
+      templateUrl: 'templates/marvel_comics.html'
+    })
+    .when('/dc_cartoons', {
+      templateUrl: 'templates/dc_cartoons.html'
+    })
+    .when('/dc_comics', {
+      templateUrl: 'templates/dc_comics.html'
+    })
     .otherwise({
-      redirectTo: 'index.html'
+      redirectTo: '/'
     });
 }]);
 

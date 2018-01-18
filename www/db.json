@@ -6,31 +6,41 @@
         "year": "2016",
         "country": "USA",
         "description": "Political involvement in the Avengers' activities causes a rift between Captain America and Iron Man.",
-        "cast": ["Captain America", "Iron man", "Black Widow", "Winter Soldier", "Falcon", "War Machine", "Hawkeye", "Black Panther", "Vision", "Scarlet Witch", "Ant-man", "Spider-man"]
+        "cast": ["Captain America", "Iron man", "Black Widow", "Winter Soldier", "Falcon", "War Machine", "Hawkeye", "Black Panther", "Vision", "Scarlet Witch", "Ant-man", "Spider-man"],
+        "cover": "img/Civil_War_Cover.jpg"
       },
       "2": {
         "name": "Spider-man: Homecoming",
         "year": "2017",
         "country": "USA",
         "description": "Peter Parker balances his life as an ordinary high school student in Queens with his superhero alter-ego Spider-Man.",
-        "cast": ["Spider-man","Vulture", "Iron man", "Shocker", "Flash", "Captain America"]
+        "cast": ["Spider-man","Vulture", "Iron man", "Shocker", "Flash", "Captain America"],
+        "cover": "img/Homecoming.jpg"
       },
       "3": {
         "name": "The Avengers",
         "year": "2012",
         "country": "USA",
         "description": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
-        "cast": ["Iron man","Captain America", "The Hulk", "Thor", "Black Widow", "Hawkeye", "Loki"]
+        "cast": ["Iron man","Captain America", "The Hulk", "Thor", "Black Widow", "Hawkeye", "Loki"],
+        "cover": "img/Avengers_2012.jpg"
       },
       "4": {
         "name": "Avengers: Age Of Ultron",
         "year": "2015",
         "country": "USA",
         "description": "When Tony Stark and Bruce Banner try to jump-start a dormant peacekeeping program called Ultron, things go horribly wrong and it's up to Earth's mightiest heroes to stop the villainous Ultron from enacting his terrible plan.",
-        "cast": ["Iron man","Captain America", "The Hulk", "Thor", "Black Widow", "Hawkeye", "War Machine", "Vision", "Scarlet Witch", "Falcon"]
+        "cast": ["Iron man","Captain America", "The Hulk", "Thor", "Black Widow", "Hawkeye", "War Machine", "Vision", "Scarlet Witch", "Falcon"],
+        "cover": "img/Avengers_2015.jpg"
       }
     },
     "comics": {
+      "name": "Avengers",
+      "year": "2012",
+      "country": "USA",
+      "description": "Loki, Thor's step-brother, returns",
+      "cast": ["Loki", "Thor"],
+      "cover": ""
     },
     "cartoons": {
       "1": {
@@ -38,14 +48,16 @@
         "year": "1978",
         "country": "USA",
         "description": "The Incredible Hulk is an American television series based on the Marvel Comics character The Hulk.",
-        "cast": ["Hulk", "Bill Bixby", "Jack McGee", "Ted Cassidy", "Charles Napier"]
+        "cast": ["Hulk", "Bill Bixby", "Jack McGee", "Ted Cassidy", "Charles Napier"],
+        "cover": ""
       },
       "2": {
         "name": "Spider-man",
         "year": "1994",
         "country": "USA",
         "description": "Spider-Man, also known as Spider-Man: The Animated Series, is an American animated television series based on the Marvel Comics superhero of the same name.",
-        "cast": ["Spider-man","Green Goblin", "Black cat", "Kingpin", "Venom", "Vulture", "Dormammu", "Carnage"]
+        "cast": ["Spider-man","Green Goblin", "Black cat", "Kingpin", "Venom", "Vulture", "Dormammu", "Carnage"],
+        "cover": ""
       }
     }
   },
@@ -56,14 +68,26 @@
         "name": "Avengers",
         "year": "2012",
         "country": "USA",
-        "description": "Loki, Thor's step-brother, returns"
+        "description": "Loki, Thor's step-brother, returns",
+        "cast": ["Loki", "Thor"],
+        "cover": ""
       }
     },
     "comics": {
-
+      "name": "Avengers",
+      "year": "2012",
+      "country": "USA",
+      "description": "Loki, Thor's step-brother, returns",
+      "cast": ["Loki", "Thor"],
+      "cover": ""
     },
     "cartoons": {
-
+      "name": "Avengers",
+      "year": "2012",
+      "country": "USA",
+      "description": "Loki, Thor's step-brother, returns",
+      "cast": ["Loki", "Thor"],
+      "cover": ""
     }
   }
 }

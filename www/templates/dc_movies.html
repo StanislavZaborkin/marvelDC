@@ -1,4 +1,4 @@
-<div ng-repeat="movie in clone2.movies">
+<div ng-repeat="movie in clone2.movies" ng-show="check()">
   <div><span class="field">Name: </span>{{' ' + movie.name}}</div>
   <div><span class="field">Year: </span>{{' ' + movie.year}}</div>
   <div><span class="field">Country: </span>{{' ' + movie.country}}</div>
