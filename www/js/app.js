@@ -61,7 +61,7 @@ angular.module('starter', ['ionic', 'ngRoute'])
 
   };
 
-  $scope.getMarvelHero = function (hero) {
+  $scope.getMarvelMovieHero = function (hero) {
     $scope.heroInfo.length = 0;
     $scope.clickH = true;
     $scope.filteredArr = [];
@@ -72,8 +72,34 @@ angular.module('starter', ['ionic', 'ngRoute'])
         $scope.heroInfo.push($scope.clone1.movies[key]);
       }
     }
-    $scope.mainDiv = false;
-  }
+    $scope.message = 'There are movies with ' + hero + ' below: ';
+  };
+  $scope.getMarvelCartoonHero = function (hero) {
+    $scope.heroInfo.length = 0;
+    $scope.clickH = true;
+    $scope.filteredArr = [];
+
+    for (key in $scope.clone1.cartoons) {
+      $scope.filteredArr.push($scope.clone1.cartoons[key].cast);
+      if (~$scope.clone1.cartoons[key].cast.indexOf(hero)){
+        $scope.heroInfo.push($scope.clone1.cartoons[key]);
+      }
+    }
+    $scope.message = 'There are cartoons with ' + hero + ' below: ';
+  };
+  $scope.getMarvelComicsHero = function (hero) {
+    $scope.heroInfo.length = 0;
+    $scope.clickH = true;
+    $scope.filteredArr = [];
+
+    for (key in $scope.clone1.comics) {
+      $scope.filteredArr.push($scope.clone1.comics[key].cast);
+      if (~$scope.clone1.comics[key].cast.indexOf(hero)){
+        $scope.heroInfo.push($scope.clone1.comics[key]);
+      }
+    }
+    $scope.message = 'There are comics with ' + hero + ' below: ';
+  };
 }).config( ['$routeProvider', function($routeProvider) {
   $routeProvider
     .when('/marvel_movies', {

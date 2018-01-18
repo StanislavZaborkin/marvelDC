@@ -20,7 +20,7 @@
       "3": {
         "name": "The Avengers",
         "year": "2012",
-        "country": "USA",
+         "country": "USA",
         "description": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
         "cast": ["Iron man","Captain America", "The Hulk", "Thor", "Black Widow", "Hawkeye", "Loki"],
         "cover": "img/Avengers_2012.jpg"
@@ -35,12 +35,38 @@
       }
     },
     "comics": {
-      "name": "Avengers",
-      "year": "2012",
-      "country": "USA",
-      "description": "Loki, Thor's step-brother, returns",
-      "cast": ["Loki", "Thor"],
-      "cover": ""
+      "1": {
+       "name": "The Amazing Spider-Man",
+       "year": "1963",
+       "country": "USA",
+       "description": "With the Parker household desperate for money following the death of Ben Parker, Peter Parker decides to continue in show business as Spider-Man.",
+       "cast": ["Spider-Man", "Mister Fantastic", "Invisible Girl", "The Human Torch", "The Thing", "Ant-Man"],
+       "cover": "img/Amazing_Spider-Man.jpg"
+     },
+      "2": {
+        "name": "Fantastic Four",
+        "year": "1961",
+        "country": "USA",
+        "description": "The Fantastic Four is a fictional superhero team appearing in American comic books published by Marvel Comics. The group debuted in The Fantastic Four #1 (cover dated Nov. 1961), which helped to usher in a new level of realism in the medium.",
+        "cast": ["Mister Fantastic", "Invisible Girl", "The Human Torch", "The Thing"],
+        "cover": "img/fantastic four.jpg"
+      },
+      "3": {
+        "name": "The Incredible Hulk",
+        "year": "1978",
+        "country": "USA",
+        "description": "The Incredible Hulk was a live-action science-fiction drama that ran on CBS from 1978 to 1982. It was created by Kenneth Johnson. ",
+        "cast": ["Hulk"],
+        "cover": "img/hulk_comics.jpg"
+      },
+      "4": {
+        "name": "The Avengers",
+        "year": "1963",
+        "country": "USA",
+        "description": "The Avengers are a fictional team of superheroes appearing in American comic books published by Marvel Comics. The team made its debut in The Avengers #1 (cover-dated Sept. 1963), created by writer-editor Stan Lee and artist/co-plotter Jack Kirby.",
+        "cast": ["Iron man", "Scarlet Witch", "Falcon", "Hercules", "Spider-Man", "Thor (Jane Foster)", "Vision"],
+        "cover": "img/avangers_comics.jpg"
+      }
     },
     "cartoons": {
       "1": {
@@ -49,7 +75,7 @@
         "country": "USA",
         "description": "The Incredible Hulk is an American television series based on the Marvel Comics character The Hulk.",
         "cast": ["Hulk", "Bill Bixby", "Jack McGee", "Ted Cassidy", "Charles Napier"],
-        "cover": ""
+        "cover": "img/incredible-hulk.jpg"
       },
       "2": {
         "name": "Spider-man",
@@ -57,7 +83,39 @@
         "country": "USA",
         "description": "Spider-Man, also known as Spider-Man: The Animated Series, is an American animated television series based on the Marvel Comics superhero of the same name.",
         "cast": ["Spider-man","Green Goblin", "Black cat", "Kingpin", "Venom", "Vulture", "Dormammu", "Carnage"],
-        "cover": ""
+        "cover": "img/spider_man_cartoon.jpg"
+      },
+      "3": {
+        "name": "Spider-man",
+        "year": "2017",
+        "country": "USA",
+        "description": "After the death of his Uncle Ben, an intelligent teenager named Peter Parker comes to his own terms of becoming a masked superhero named Spider-Man when he became bitten by a radioactive spider during a school field trip to Oscorp and given spider-like powers.",
+        "cast": ["Spider-man", "Gwen Stacy", "Vulture", "Miles Morales", "Man-Wolf", "Doctor Octopus", "Harry Osborn"],
+        "cover": "img/spider-man-2017.jpg"
+      },
+      "4": {
+        "name": "The Super Hero Squad Show",
+        "year": "2009",
+        "country": "USA",
+        "description": "Marvel Super Hero Squad is an American cartoon series by Marvel Animation. It is based on the Marvel Super Hero Squad action figure line from Hasbro, which portray the Avengers, the X-Men, and various other characters of the Marvel Universe in a cartoonish super-deformed-style.",
+        "cast": ["Iron man", "Hulk", "Captain America", "Invisible Woman", "Colossus", "Wolverine", "Falcon", "Thor", "Iron Fist", "Scarlet Witch", "Cyclops"],
+        "cover": "img/Super_Hero_Squad_Show.jpg"
+      },
+      "5": {
+        "name": "X-Men",
+        "year": "1992",
+        "country": "USA",
+        "description": "X-Men, also known as X-Men: The Animated Series, is an American animated television series which debuted on October 31, 1992, in the United States on the Fox Network, as part of its Fox Kids Saturday morning lineup.",
+        "cast": ["Cyclops", "Wolverine", "Rogue", "Storm", "Beast", "Gambit", "Jean Grey", "Jubilee", "Professor X"],
+        "cover": "img/x-men.jpg"
+      },
+      "6": {
+        "name": "Iron man",
+        "year": "1994",
+        "country": "USA",
+        "description": "Iron Man, also known as Iron Man: The Animated Series, is an American animated television series based on Marvel Comics' superhero Iron Man. ",
+        "cast": ["Iron man", "War Machine", "Scarlet Witch", "Spider-Woman"],
+        "cover": "img/iron-man.jpg"
       }
     }
   },
@@ -65,11 +123,11 @@
   "dc": {
     "movies": {
       "1": {
-        "name": "Avengers",
-        "year": "2012",
+        "name": "The Amazing Spider-Man",
+        "year": "1963",
         "country": "USA",
-        "description": "Loki, Thor's step-brother, returns",
-        "cast": ["Loki", "Thor"],
+        "description": "",
+        "cast": ["Spider-Man", "Thor"],
         "cover": ""
       }
     },
