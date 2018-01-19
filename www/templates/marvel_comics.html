@@ -11,11 +11,10 @@
   </span>
 </div>
 
-
-
 <div ng-show="clickH">
   <h1>{{message}}</h1>
 </div>
+
 <div ng-repeat="movie in heroInfo track by $index" ng-show="clickH" class="heroDiv">
   <div><span class="field">Name: </span>{{' ' + movie.name}}</div>
   <div><span class="field">Year: </span>{{' ' + movie.year}}</div>

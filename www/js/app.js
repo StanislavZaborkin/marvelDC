@@ -57,6 +57,7 @@ angular.module('starter', ['ionic', 'ngRoute'])
   $scope.showMarvelComics = function () {
 
   };
+
   $scope.showDCComics = function () {
 
   };
@@ -96,6 +97,46 @@ angular.module('starter', ['ionic', 'ngRoute'])
       $scope.filteredArr.push($scope.clone1.comics[key].cast);
       if (~$scope.clone1.comics[key].cast.indexOf(hero)){
         $scope.heroInfo.push($scope.clone1.comics[key]);
+      }
+    }
+    $scope.message = 'There are comics with ' + hero + ' below: ';
+  };
+
+  $scope.getDCMovieHero = function (hero) {
+    $scope.heroInfo.length = 0;
+    $scope.clickH = true;
+    $scope.filteredArr = [];
+
+    for (key in $scope.clone2.movies) {
+      $scope.filteredArr.push($scope.clone2.movies[key].cast);
+      if (~$scope.clone2.movies[key].cast.indexOf(hero)){
+        $scope.heroInfo.push($scope.clone2.movies[key]);
+      }
+    }
+    $scope.message = 'There are movies with ' + hero + ' below: ';
+  };
+  $scope.getDCCartoonHero = function (hero) {
+    $scope.heroInfo.length = 0;
+    $scope.clickH = true;
+    $scope.filteredArr = [];
+
+    for (key in $scope.clone2.cartoons) {
+      $scope.filteredArr.push($scope.clone2.cartoons[key].cast);
+      if (~$scope.clone2.cartoons[key].cast.indexOf(hero)){
+        $scope.heroInfo.push($scope.clone2.cartoons[key]);
+      }
+    }
+    $scope.message = 'There are cartoons with ' + hero + ' below: ';
+  };
+  $scope.getDCComicsHero = function (hero) {
+    $scope.heroInfo.length = 0;
+    $scope.clickH = true;
+    $scope.filteredArr = [];
+
+    for (key in $scope.clone2.comics) {
+      $scope.filteredArr.push($scope.clone2.comics[key].cast);
+      if (~$scope.clone2.comics[key].cast.indexOf(hero)){
+        $scope.heroInfo.push($scope.clone2.comics[key]);
       }
     }
     $scope.message = 'There are comics with ' + hero + ' below: ';

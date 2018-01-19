@@ -123,29 +123,130 @@
   "dc": {
     "movies": {
       "1": {
-        "name": "The Amazing Spider-Man",
-        "year": "1963",
+        "name": "Justice League",
+        "year": "2017",
         "country": "USA",
-        "description": "",
-        "cast": ["Spider-Man", "Thor"],
-        "cover": ""
+        "description": "Justice League is a 2017 American superhero film based on the DC Comics superhero team of the same name, distributed by Warner Bros. Pictures.",
+        "cast": ["Batman", "Superman", "Wonder Woman", "Flash", "Aquaman", "Cyborg"],
+        "cover": "img/Justice_League_poster.jpg"
+      },
+      "2": {
+        "name": "Wonder Woman",
+        "year": "2017",
+        "country": "USA",
+        "description": "Wonder Woman is a 2017 American superhero film based on the DC Comics character of the same name, distributed by Warner Bros. Pictures.",
+        "cast": ["Wonder Woman", "Antiope", "General Erich Ludendorff", "Hippolyta", "Doctor Poison"],
+        "cover": "img/Wonder_Woman_poster.jpg"
+      },
+      "3": {
+        "name": "Suicide Squad",
+        "year": "2016",
+        "country": "USA",
+        "description": "Suicide Squad is a 2016 American superhero film based on the DC Comics antihero team of the same name, distributed by Warner Bros. Pictures.",
+        "cast": ["Deadshot", "Joker", "Harley Quinn", "Rick FLag", "Killer Croc", "Katana"],
+        "cover": "img/Suicide_Squad_Poster.png"
+      },
+      "4": {
+        "name": "Batman vs Superman",
+        "year": "2016",
+        "country": "USA",
+        "description": "Batman v Superman: Dawn of Justice is a 2016 American superhero film featuring the DC Comics characters Batman and Superman. ",
+        "cast": ["Batman", "Superman", "Wonder Woman"],
+        "cover": "img/Batman_vs_Superman_poster.jpg"
+      },
+      "5": {
+        "name": "Man of Steel",
+        "year": "2013",
+        "country": "USA",
+        "description": "Man of Steel is a 2013 superhero film featuring the DC Comics character Superman. It is a British-American venture[2] produced by Legendary Pictures, DC Entertainment, Syncopy Inc., and Cruel and Unusual Films, and distributed by Warner Bros. Pictures.",
+        "cast": ["Superman", " General Zod", "Jor-EI", "Faora"],
+        "cover": "img/ManofSteelFinalPoster.jpg"
       }
     },
     "comics": {
-      "name": "Avengers",
-      "year": "2012",
-      "country": "USA",
-      "description": "Loki, Thor's step-brother, returns",
-      "cast": ["Loki", "Thor"],
-      "cover": ""
+      "1": {
+        "name": "Justice League",
+        "year": "1960",
+        "country": "USA",
+        "description" : "The Justice League is the DC Universe's most powerful and premier superhero team, a strike force comprised of the world's mightiest heroes. ",
+        "cast": ["Aquaman", "Batman", "Flash", "Green Lantern", "Martian Manhunter", "Superman", "Wonder Woman"],
+        "cover": "img/Justice_League_comics.jpg"
+      },
+      "2": {
+        "name": "Aquaman",
+        "year": "1960",
+        "country": "USA",
+        "description" : "Aquaman is a fictional superhero appearing in American comic books published by DC Comics. Created by Paul Norris and Mort Weisinger, the character debuted in More Fun Comics #73 (November 1941).",
+        "cast": ["Aquaman", "Mera", "Black Manta", "Murk", "Tula (Aquagirl)", "Black Jack"],
+        "cover": "img/Aquaman_comics.png"
+      },
+      "3": {
+        "name": "Batgirl",
+        "year": "1961",
+        "country": "USA",
+        "description" : "Batgirl is the name of several fictional superheroes appearing in American comic books published by DC Comics, depicted as female counterparts to the superhero Batman.",
+        "cast": ["Batgirl", "Batman", "Robin"],
+        "cover": "img/Batgirl.png"
+      },
+      "4": {
+        "name": "Batman",
+        "year": "1940",
+        "country": "USA",
+        "description" : "Batman is an ongoing American comic book series featuring the DC Comics superhero Batman as the main protagonist. The character first appeared in Detective Comics #27 (cover dated May 1939).",
+        "cast": ["Batman", "Robin", "Batgirl"],
+        "cover": "img/Batman_comics.png"
+      },
+      "5": {
+        "name": "Superman",
+        "year": "1959",
+        "country": "USA",
+        "description" : "Superman is an ongoing American comic book series featuring the DC Comics superhero Superman as the main protagonist. ",
+        "cast": ["Superman", "Lois Lane", "Jimmy Olsen", "Lex Luthor"],
+        "cover": "img/Suoerman_comics.jpg"
+      }
     },
     "cartoons": {
-      "name": "Avengers",
-      "year": "2012",
-      "country": "USA",
-      "description": "Loki, Thor's step-brother, returns",
-      "cast": ["Loki", "Thor"],
-      "cover": ""
+      "1": {
+        "name": "Wonder Woman",
+        "year": "1975",
+        "country": "USA",
+        "description": "Wonder Woman, known from seasons 2-3 as The New Adventures of Wonder Woman, is an American television series based on the DC Comics comic book superhero of the same name. ",
+        "cast": ["Wonder Woman", "Etta Candy", "Steve Trevor", " General Philip Blankenship", "Wonder Girl"],
+        "cover": "img/wonder_woman_caertoon.jpg"
+      },
+      "2": {
+        "name": "Batman",
+        "year": "1960",
+        "country": "USA",
+        "description": "Batman is a 1960s American live action television series, based on the DC comic book character of the same name. It stars Adam West as Batman and Burt Ward as Robin – two crime-fighting heroes who defend Gotham City from a variety of arch villains.",
+        "cast": ["Batman", "Robin", "Cooper", "Batgirl", "James Gordon"],
+        "cover": "img/Batman_cartoon.JPG"
+      },
+      "3": {
+        "name": "The Flash",
+        "year": "1990",
+        "country": "USA",
+        "description": "The Flash is a 1990 American television series developed by the writing team of Danny Bilson and Paul De Meo that aired on CBS.",
+        "cast": ["Flash", "Christina McGee", "Cooper", "Nightshade", "James Montgomery Jesse"],
+        "cover": "img/The_Flash_cartoon.jpg"
+      },
+      "4": {
+        "name": "Adventures of Superman",
+        "year": "1938",
+        "country": "USA",
+        "description": "Adventures of Superman is an American television series based on comic book characters and concepts created in 1938 by Jerry Siegel and Joe Shuster.",
+        "cast": ["Superman", "Lois Lane", "Jimmy Olsen", "Perry White", "Inspector Henderson"],
+        "cover": "img/Superman_cartoon.jpg"
+      },
+      "5": {
+        "name": "Justice League",
+        "year": "2001",
+        "country": "USA",
+        "description": "Justice League is an American animated television series which ran from 2001 to 2004 on Cartoon Network. It is part of the DC animated universe.",
+        "cast": ["Superman", "Wonder Woman", "Batman", "Flash", "Hawkgirl"],
+        "cover": "img/Justiceleaguetimmartpromo.jpg"
+      }
+
     }
   }
 }
