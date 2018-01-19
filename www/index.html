@@ -26,32 +26,36 @@
 
   <body ng-app="starter">
     <ion-pane>
-      <ion-header-bar class="bar-stable">
-        <h1 class="title">Ionic</h1>
-      </ion-header-bar>
       <ion-content class="has-header" ng-controller="mainCrl">
 
           <div ng-view></div>
 
-        <div class="main" ng-show="showMainDiv">
-        <div class="left">
+        <div ng-show="showMainDiv">
+          <div class="row main">
+        <div class="left col">
           <img src="img/marvel.jpg" ng-click="getMarvelData()">
         </div>
-        <div class="right">
+            <div class="col">
+              <img src="img/VS.jpg" class="vs" alt="">
+            </div>
+        <div class="right col">
           <img src="img/dc.jpg" ng-click="getDCData()">
         </div>
-          <div ng-show="clickM">
-            <span><a href="#marvel_movies"><button class="button marvel" ng-click="showMarvelMovies()"><h3>Movies</h3></button></a></span>
-            <span><a href="#marvel_cartoons"><button class="button marvel" ng-click="showMarvelCartoons()"><h3>Cartoons</h3></button></a></span>
-            <span><a href="#marvel_comics"><button class="button marvel" ng-click="showMarvelComics()"><h3>Comics</h3></button></a></span>
           </div>
-          <div ng-show="clickD">
-            <span><a href="#dc_movies"><button class="button dc" ng-click="showDCMovies()"><h3>Movies</h3></button></a></span>
-            <span><a href="#dc_cartoons"><button class="button dc" ng-click="showDCCartoons()"><h3>Cartoons</h3></button></a></span>
-            <span><a href="#dc_comics"><button class="button dc" ng-click="showDCComics()"><h3>Comics</h3></button></a></span>
+          <br>
+        </div>
+
+          <div class="row" ng-show="clickM">
+            <div class="col"><a href="#marvel_movies"><button class="button marvel" ng-click="showMarvelMovies()"><h3>Movies</h3></button></a></div>
+            <div class="col"><a href="#marvel_cartoons"><button class="button marvel" ng-click="showMarvelCartoons()"><h3>Cartoons</h3></button></a></div>
+            <div class="col"><a href="#marvel_comics"><button class="button marvel" ng-click="showMarvelComics()"><h3>Comics</h3></button></a></div>
           </div>
 
-        </div>
+          <div  class="row" ng-show="clickD">
+            <div class="col"><a href="#dc_movies"><button class="button dc" ng-click="showDCMovies()"><h3>Movies</h3></button></a></div>
+            <div class="col"><a href="#dc_cartoons"><button class="button dc" ng-click="showDCCartoons()"><h3>Cartoons</h3></button></a></div>
+            <div class="col"><a href="#dc_comics"><button class="button dc" ng-click="showDCComics()"><h3>Comics</h3></button></a></div>
+          </div>
       </ion-content>
     </ion-pane>
   </body>

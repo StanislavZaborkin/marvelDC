@@ -11,6 +11,9 @@ angular.module('starter', ['ionic', 'ngRoute'])
   $scope.check = function () {
     return ($scope.showMainDiv = false, $scope.showMovies = true);
   };
+  $scope.checkMain = function () {
+    return $scope.showMainDiv = true;
+  };
 
   $http({
     method: 'GET',
