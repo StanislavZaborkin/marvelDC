@@ -67,8 +67,8 @@ angular.module('starter', ['ionic', 'ngRoute'])
 
   $scope.getMarvelMovieHero = function (hero) {
     $scope.heroInfo.length = 0;
-    $scope.clickH = true;
     $scope.filteredArr = [];
+
 
     for (key in $scope.clone1.movies) {
       $scope.filteredArr.push($scope.clone1.movies[key].cast);
@@ -77,6 +77,7 @@ angular.module('starter', ['ionic', 'ngRoute'])
       }
     }
     $scope.message = 'There are movies with ' + hero + ' below: ';
+    $scope.clickH = true;
   };
   $scope.getMarvelCartoonHero = function (hero) {
     $scope.heroInfo.length = 0;
@@ -117,6 +118,7 @@ angular.module('starter', ['ionic', 'ngRoute'])
       }
     }
     $scope.message = 'There are movies with ' + hero + ' below: ';
+
   };
   $scope.getDCCartoonHero = function (hero) {
     $scope.heroInfo.length = 0;

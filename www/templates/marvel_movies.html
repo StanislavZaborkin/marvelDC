@@ -2,52 +2,54 @@
 <!--
 
 https://habrahabr.ru/post/293938/
-https://ionicframework.com/docs/v1/components/#grid-responsive
-
 -->
 
-<div class="row" ng-repeat="movie in clone1.movies">
-  <div class="col col-33">
-  <div class="header">
-    <h2>{{movie.name}}</h2>
+<div ng-show="clickH">
+  <h2>{{message}}</h2>
+</div>
+<div class="row descDiv1" ng-repeat="movie in heroInfo track by $index" ng-show="clickH" class="heroDiv">
+
+  <div class="col">
+    <div class="header three1">
+      <h2>{{'"' + movie.name + '"'}}</h2>
+      <p>{{movie.year}}, {{movie.country}}</p>
+    </div>
+
+    <div>
+
+      <div class="leftDiv1"><img  ng-src="{{movie.cover}}"></div>
+      <p class="description1">
+        {{'"' + movie.description + '"'}}
+      </p>
+
+      <span ng-repeat="hero in movie.cast">
+  {{hero + ' '}}
+  </span>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="row descDiv" ng-repeat="movie in clone1.movies" ng-show="check()" >
+  <div class="col">
+  <div class="header three">
+    <h2>{{'"' + movie.name + '"'}}</h2>
     <p>{{movie.year}}, {{movie.country}}</p>
   </div>
 
-  <div class="">
+  <div>
 
-      <div class="leftDiv"><img  ng-src="{{movie.cover}}" style="width: 100%">
-      </div>
-      <span ng-repeat="hero in movie.cast" class="rightDiv">
-        {{hero}}
-      </span>
+      <div class="leftDiv"><img  ng-src="{{movie.cover}}"></div>
+    <h3 class="description">
+      {{'"' + movie.description + '"'}}
+    </h3>
 
-    <p class="description">
-      {{movie.description}}
-    </p>
-  </div>
-  </div>
-
-</div>
-
-<div ng-repeat="movie in clone1.movies" ng-show="check()" class="cast">
-  <div><img ng-src="{{movie.cover}}" class="coverClass"></div>
-  <div><span class="field">Name: </span>{{' ' + movie.name}}</div>
-  <div><span class="field">Year: </span>{{' ' + movie.year}}</div>
-  <div><span class="field">Country: </span>{{' ' + movie.country}}</div>
-  <div><span class="field">Description:</span>{{' ' + movie.description}}</div>
-  <span class="field">Cast:</span>
-  <span ng-repeat="hero in movie.cast">
+    <span ng-repeat="hero in movie.cast">
   {{hero + ' '}}<button class="ion-information-circled" ng-click="getMarvelMovieHero(hero)"></button>{{' '}}
   </span>
-</div>
 
-<div ng-show="clickH">
-  <h1>{{message}}</h1>
-</div>
-<div ng-repeat="movie in heroInfo track by $index" ng-show="clickH" class="heroDiv">
-  <div><span class="field">Name: </span>{{' ' + movie.name}}</div>
-  <div><span class="field">Year: </span>{{' ' + movie.year}}</div>
-  <div><span class="field">Country: </span>{{' ' + movie.country}}</div>
-  <div><span class="field">Description:</span>{{' ' + movie.description}}</div>
-</div>
+  </div>
+  </div>
 
+</div>
