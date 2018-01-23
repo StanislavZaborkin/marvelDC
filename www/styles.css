@@ -52,10 +52,11 @@ h3 {
 }
 
 .leftDiv img {
-  width: 200px;
-  height: 300px;
+  height: 28vw;
   border-radius: 5%;
   box-shadow: 0 0 10px rgba(0,0,0,0.9);
+  float: left;
+  margin-right: 5%;
 }
 
 .leftDiv1 img {
@@ -67,7 +68,7 @@ h3 {
 
 .description {
   color: grey;
-  font-size: 100%;
+  font-size: 1vw;
   font-family: 'Righteous', cursive;
 }
 
@@ -80,37 +81,51 @@ h3 {
 .row {
   margin: 0 !important;
   padding: 0 !important;
+  width: 36%;
+  height: 37vw;
 }
 
 .descDiv {
-  width: 300px;
-  height: 620px;
   background: #FCF2E5;
   border: 2px solid  #90806A;
   border-radius: 1vw;
   float: left;
-  margin:2% 5% 5% 5% !important;
+  margin: 2% 1% 1% 1% !important;
+  text-align: left;
+  padding-left: 3vw;
 }
 
 .descDiv1 {
-  width: 170px;
-  height: 460px;
+  width: 210px;
+  height: 311px;
   background: #FCF2E5;
   border: 2px solid  #90806A;
   border-radius: 1vw;
   float: left;
-  margin:0 5% 5% 5% !important;
+  margin: 0 3% 6% 3% !important;
 }
 
 .header {
-  height: 110px;
+  height: 1vw;
+  width: 111%;
+  margin-bottom: 15%;
+  font-family: 'Merriweather', serif;
+  color: #FCF2E5;
+  text-align: left;
+  border-radius: 1vw;
+  font-size: 1.5vw;
+  padding-left: 1.7vw;
+}
+.header1 {
+  height: 60px;
 }
 .header h2 {
   font-size: 175%;
 }
 
 .header p {
-  padding-top: 10%;
+  color: black;
+  font-size: 0.9vw;
 }
 
 .three {
@@ -123,7 +138,6 @@ h3 {
   color: #FCF2E5;
   background: #90806A;
   border-radius: 1vw;
-  width: 280px;
   font-size: 143%;
   font-weight: normal;
   padding: 5px 20px;
@@ -137,8 +151,8 @@ h3 {
   color: #FCF2E5;
   background: #90806A;
   border-radius: 1vw;
-  width: 150px;
-  font-size: 100%;
+  width: 200px;
+  font-size: 95%;
   font-weight: normal;
   padding: 5px 20px;
   display: inline-block;
@@ -149,9 +163,9 @@ h3 {
   content: "";
   position: absolute;
   width: 100%;
-  height: 4px;
+  height: 0.2vw;
   left: 0;
-  bottom: -15px;
+  bottom: -1.3vw;
   background: #90806A;
 }
 .three h2:after {
@@ -169,7 +183,7 @@ h3 {
 
 .descDiv span {
   font-family: 'Oswald', sans-serif;
-  font-size: 93%
+  font-size: 1vw;
 }
 
 .descDiv1 span {
@@ -178,7 +192,7 @@ h3 {
 
 .descDiv p {
   font-family: 'Merriweather', serif;
-  font-size: 200%;
+  font-size: 1.5vw;
 }
 
 .has-header {
@@ -186,6 +200,122 @@ h3 {
 }
 
 ion-content {
-  background-image: url(img/1.png);
-  background-size: contain;
+  background: url(img/marvelVSdc.jpg);
+  background-size: 100% 100%;
+}
+
+
+.message {
+  font-family: 'Merriweather', serif;
+  color: white;
+  text-align: center;
+  background: #90806A;
+  width: 600px;
+  margin: 0 auto 5% auto;
+  border-radius: 1vw;
+}
+
+.btn {
+  background: transparent;
+  border: none;
+}
+
+.btn p {
+  color: red;
+  font-size: 1.1vw;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.mainHeader {
+  height: 5vw;
+  background: black;
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  .descDiv1 {
+    height: 300px;
+  }
+  .descDiv {
+    height: 640px;
+  }
+}
+
+/*lkjfdslkjflsdkjf*/
+
+* { box-sizing: border-box; }
+
+nav { background: black; }
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  transition: .4s ease-in-out;
+}
+.topmenu {
+  text-align: center;
+  padding: 10px 0;
+}
+.topmenu > li {
+  display: inline-block;
+  position: relative;
+}
+.topmenu > li:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1px;
+  height: 12px;
+  background: #d2d2d2;
+  top: 16px;
+  box-shadow: 4px -2px 0 #d2d2d2;
+  transform: rotate(30deg);
+}
+.topmenu > li:last-child:after {
+  background: none;
+  box-shadow: none;
+}
+.topmenu > li > a {
+  font-size: 240%;
+  padding: 12px 26px;
+  color: #767676;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: 'Exo 2', sans-serif;
+}
+.topmenu li a:hover { color: #c0a97a; }
+.submenu {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 210px;
+  margin-left: -105px;
+  background: #000;
+  font-size: 200%;
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(.8);
+  transition: .4s ease-in-out;
+}
+.submenu li a {
+  padding: 10px 0;
+  margin: 0 10px;
+  border-bottom: 1px solid #efefef;
+  font-size: 115%;
+  color: #484848;
+  font-family: 'Kurale', serif;
+}
+.topmenu > li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
 }

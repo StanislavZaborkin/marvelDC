@@ -30,16 +30,6 @@ angular.module('starter', ['ionic', 'ngRoute'])
     console.log('error' + response.statusText);
   });
 
-  $scope.getMarvelData = function () {
-    $scope.clickM = true;
-    $scope.clickD = false;
-  };
-
-  $scope.getDCData = function () {
-    $scope.clickM = false;
-    $scope.clickD = true;
-  };
-
   $scope.showMarvelCartoons = function () {
     $scope.click1 = true;
   };

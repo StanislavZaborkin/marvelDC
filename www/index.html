@@ -32,28 +32,27 @@
           <div ng-view></div>
 
         <div ng-show="showMainDiv">
-          <div class="row main">
-        <div class="left col">
-          <img src="img/marvel.jpg" ng-click="getMarvelData()">
-        </div>
-            <div class="col">
-              <img src="img/VS.jpg" class="vs" alt="">
-            </div>
-        <div class="right col">
-          <img src="img/dc.jpg" ng-click="getDCData()">
-        </div>
-          </div>
-          <br>
-          <div class="row" ng-show="clickM">
-            <div class="col"><a href="#marvel_movies"><button class="button marvel" ng-click="showMarvelMovies()"><h3>Movies</h3></button></a></div>
-            <div class="col"><a href="#marvel_cartoons"><button class="button marvel" ng-click="showMarvelCartoons()"><h3>Cartoons</h3></button></a></div>
-            <div class="col"><a href="#marvel_comics"><button class="button marvel" ng-click="showMarvelComics()"><h3>Comics</h3></button></a></div>
-          </div>
+          <div class="mainHeader">
 
-          <div  class="row" ng-show="clickD">
-            <div class="col"><a href="#dc_movies"><button class="button dc" ng-click="showDCMovies()"><h3>Movies</h3></button></a></div>
-            <div class="col"><a href="#dc_cartoons"><button class="button dc" ng-click="showDCCartoons()"><h3>Cartoons</h3></button></a></div>
-            <div class="col"><a href="#dc_comics"><button class="button dc" ng-click="showDCComics()"><h3>Comics</h3></button></a></div>
+            <nav>
+              <ul class="topmenu">
+                <li><a href="index.html" ng-click="checkMain()">Home</a></li>
+                <li><a href="" class="down">Marvel</a>
+                  <ul class="submenu">
+                    <li><a href="#marvel_movies">Movies</a></li>
+                    <li><a href="#marvel_cartoons">Cartoons</a></li>
+                    <li><a href="#marvel_comics">Comics</a></li>
+                  </ul>
+                </li>
+                <li><a href="" class="down">DC</a>
+                  <ul class="submenu">
+                    <li><a href="#dc_movies">Movies</a></li>
+                    <li><a href="#dc_cartoons">Cartoons</a></li>
+                    <li><a href="#dc_comics">Comics</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </ion-content>

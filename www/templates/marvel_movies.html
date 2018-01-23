@@ -1,40 +1,32 @@
-<!--<a href="../index.html"><button class="button" ng-click="checkMain()">click to main</button></a>-->
-<!--
+<div class="mainHeader">
 
-https://habrahabr.ru/post/293938/
--->
-
-<div ng-show="clickH">
-  <h2>{{message}}</h2>
+  <nav>
+    <ul class="topmenu">
+      <li><a href="index.html" ng-click="checkMain()">Home</a></li>
+      <li><a href="" class="down">Marvel</a>
+        <ul class="submenu">
+          <li><a href="#marvel_movies">Movies</a></li>
+          <li><a href="#marvel_cartoons">Cartoons</a></li>
+          <li><a href="#marvel_comics">Comics</a></li>
+        </ul>
+      </li>
+      <li><a href="" class="down">DC</a>
+        <ul class="submenu">
+          <li><a href="#dc_movies">Movies</a></li>
+          <li><a href="#dc_cartoons">Cartoons</a></li>
+          <li><a href="#dc_comics">Comics</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </div>
-<div class="row descDiv1" ng-repeat="movie in heroInfo track by $index" ng-show="clickH" class="heroDiv">
 
-  <div class="col">
-    <div class="header three1">
-      <h2>{{'"' + movie.name + '"'}}</h2>
-      <p>{{movie.year}}, {{movie.country}}</p>
-    </div>
-
-    <div>
-
-      <div class="leftDiv1"><img  ng-src="{{movie.cover}}"></div>
-      <p class="description1">
-        {{'"' + movie.description + '"'}}
-      </p>
-
-      <span ng-repeat="hero in movie.cast">
-  {{hero + ' '}}
-  </span>
-
-    </div>
-  </div>
-
-</div>
+<div style="margin: 0 auto">
 
 <div class="row descDiv" ng-repeat="movie in clone1.movies" ng-show="check()" >
   <div class="col">
-  <div class="header three">
-    <h2>{{'"' + movie.name + '"'}}</h2>
+  <div class="header">
+    <h2>{{movie.name}}</h2>
     <p>{{movie.year}}, {{movie.country}}</p>
   </div>
 
@@ -45,11 +37,29 @@ https://habrahabr.ru/post/293938/
       {{'"' + movie.description + '"'}}
     </h3>
 
-    <span ng-repeat="hero in movie.cast">
-  {{hero + ' '}}<button class="ion-information-circled" ng-click="getMarvelMovieHero(hero)"></button>{{' '}}
-  </span>
+    <div ng-repeat="hero in movie.cast">
+ <button class="btn" ng-click="getMarvelMovieHero(hero)"><p>{{hero + ' '}}</p> </button>{{' '}}
+  </div>
 
   </div>
   </div>
+</div>
+</div>
+<div class="row"></div>
 
+<div ng-show="clickH">
+  <h2 class="message">{{message}}</h2>
+</div>
+<div class="row descDiv1" ng-repeat="movie in heroInfo track by $index" ng-show="clickH">
+
+  <div class="col">
+    <div class="header1 three1">
+      <h2>{{'"' + movie.name + '"'}}</h2>
+      <p>{{movie.year}}, {{movie.country}}</p>
+    </div>
+    <div class="leftDiv1"><img  ng-src="{{movie.cover}}"></div>
+    <p class="description1">
+      {{'"' + movie.description + '"'}}
+    </p>
+  </div>
 </div>
