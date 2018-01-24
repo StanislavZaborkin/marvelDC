@@ -56,12 +56,13 @@ h3 {
   border-radius: 5%;
   box-shadow: 0 0 10px rgba(0,0,0,0.9);
   float: left;
-  margin-right: 5%;
+  margin: 0 3%;
 }
 
 .leftDiv1 img {
-  width: 100px;
-  height: 150px;
+  width: 140px;
+  height: 180px;
+  margin-left: 16%;;
   border-radius: 5%;
   box-shadow: 0 0 10px rgba(0,0,0,0.9);
 }
@@ -73,6 +74,7 @@ h3 {
 }
 
 .description1 {
+  padding-left: 3%;
   color: grey;
   font-size: 60%;
   font-family: 'Righteous', cursive;
@@ -96,7 +98,7 @@ h3 {
 }
 
 .descDiv1 {
-  width: 210px;
+  width: 220px;
   height: 311px;
   background: #FCF2E5;
   border: 2px solid  #90806A;
@@ -106,21 +108,18 @@ h3 {
 }
 
 .header {
-  height: 1vw;
+  height: 0.6vw;
   width: 111%;
-  margin-bottom: 15%;
+  margin-bottom: 17%;
   font-family: 'Merriweather', serif;
   color: #FCF2E5;
   text-align: left;
   border-radius: 1vw;
-  font-size: 1.5vw;
-  padding-left: 1.7vw;
+  font-size: 1.6vw;
+  padding-left: 1.3vw;
 }
 .header1 {
   height: 60px;
-}
-.header h2 {
-  font-size: 175%;
 }
 
 .header p {
@@ -148,8 +147,6 @@ h3 {
 .three1 h2 {
   font-family: 'Merriweather', serif;
   position: relative;
-  color: #FCF2E5;
-  background: #90806A;
   border-radius: 1vw;
   width: 200px;
   font-size: 95%;
@@ -204,13 +201,12 @@ ion-content {
   background-size: 100% 100%;
 }
 
-
 .message {
   font-family: 'Merriweather', serif;
   color: white;
   text-align: center;
   background: #90806A;
-  width: 600px;
+  width: 46%;
   margin: 0 auto 5% auto;
   border-radius: 1vw;
 }
@@ -221,29 +217,43 @@ ion-content {
 }
 
 .btn p {
-  color: red;
   font-size: 1.1vw;
-  text-align: left;
   padding: 0;
   margin: 0;
 }
 
 .mainHeader {
-  height: 5vw;
   background: black;
   opacity: 0.7;
 }
 
-@media screen and (min-width: 320px) and (max-width: 400px) {
-  .descDiv1 {
-    height: 300px;
-  }
+.rightDiv {
+  text-align: left;
+  height: 1.4vw;
+}
+
+.header h2 {
+  margin-bottom: 0;
+  font-size: 170%;
+}
+
+.header1 h2 {
+  text-align: center;
+}
+.header1 p {
+  text-align: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 530px) {
   .descDiv {
-    height: 640px;
+    height: 40vw;
+  }
+  .header h2 {
+    font-size: 140%;
   }
 }
 
-/*lkjfdslkjflsdkjf*/
+/*header styles*/
 
 * { box-sizing: border-box; }
 
@@ -269,7 +279,7 @@ nav a {
 }
 .topmenu > li:after {
   content: "";
-  position: absolute;
+  position: relative;
   right: 0;
   width: 1px;
   height: 12px;
@@ -318,4 +328,73 @@ nav a {
   visibility: visible;
   opacity: 1;
   transform: scale(1);
+}
+
+@media screen and (min-width: 394px) and (max-width: 530px) {
+  .topmenu > li > a {
+    font-size: 180%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 393px) {
+  .topmenu > li > a {
+    font-size: 100% !important;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 700px) {
+  .row {
+    width: 48%;
+    height: 46vw;
+  }
+  .btn p {
+    font-size: 2.2vw;
+  }
+  .rightDiv {
+    height: 2.1vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 700px) {
+  .row {
+    width: 70%;
+    height: 100vw;
+  }
+  .leftDiv img {
+    height: 60vw;
+    width: 46vw;
+    float: inherit;
+    margin-bottom: -4vw;
+  }
+  .header h2 {
+    font-size: 300%;
+    text-align: center;
+    padding-right: 10%;
+  }
+  .header p {
+    font-size: 3vw;
+    padding-right: 10%;
+    text-align: center;
+  }
+  .rightDiv {
+    display: inline-block;
+  }
+  .description {
+    font-size: 2.5vw;
+    margin-bottom: -1vw;
+  }
+  .submenu {
+    font-size: 130%;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 350px) {
+  .btn p {
+    margin: 0 -4vw;
+  }
+  .row {
+    width: 70%;
+    height: 110vw;
+  }
 }

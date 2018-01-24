@@ -1,22 +1,55 @@
-<div ng-repeat="movie in clone2.cartoons" ng-show="check()" class="cast">
-  <div><img ng-src="{{movie.cover}}" class="coverClass"></div>
-  <div><span class="field">Name: </span>{{' ' + movie.name}}</div>
-  <div><span class="field">Year: </span>{{' ' + movie.year}}</div>
-  <div><span class="field">Country: </span>{{' ' + movie.country}}</div>
-  <div><span class="field">Description:</span>{{' ' + movie.description}}</div>
-  <span class="field">Cast:</span>
-  <span ng-repeat="hero in movie.cast">
-              {{hero + ' '}}<button class="ion-information-circled" ng-click="getDCCartoonHero(hero)"></button>{{', '}}
-  </span>
+<div class="mainHeader">
+  <nav>
+    <ul class="topmenu">
+      <li><a href="index.html" ng-click="checkMain()">Home</a></li>
+      <li><a href="" class="down">Marvel</a>
+        <ul class="submenu">
+          <li><a href="#marvel_movies">Movies</a></li>
+          <li><a href="#marvel_cartoons">Cartoons</a></li>
+          <li><a href="#marvel_comics">Comics</a></li>
+        </ul>
+      </li>
+      <li><a href="" class="down">DC</a>
+        <ul class="submenu">
+          <li><a href="#dc_movies">Movies</a></li>
+          <li><a href="#dc_cartoons">Cartoons</a></li>
+          <li><a href="#dc_comics">Comics</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </div>
+
+<div class="row descDiv" ng-repeat="movie in clone2.cartoons" ng-show="check()" >
+  <div class="col">
+    <div class="header">
+      <h2>{{movie.name}}</h2>
+      <p>{{movie.year}}, {{movie.country}}</p>
+    </div>
+    <div>
+      <div class="leftDiv"><img  ng-src="{{movie.cover}}"></div>
+      <h3 class="description">
+        {{'"' + movie.description + '"'}}
+      </h3>
+      <div ng-repeat="hero in movie.cast" class="rightDiv">
+        <button class="btn" ng-click="getDCCartoonHero(hero)"><p>{{hero + ' '}}</p> </button>{{' '}}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row"></div>
 
 <div ng-show="clickH">
-  <h1>{{message}}</h1>
+  <h2 class="message">{{message}}</h2>
 </div>
-<div ng-repeat="movie in heroInfo track by $index" ng-show="clickH" class="heroDiv">
-  <div><span class="field">Name: </span>{{' ' + movie.name}}</div>
-  <div><span class="field">Year: </span>{{' ' + movie.year}}</div>
-  <div><span class="field">Country: </span>{{' ' + movie.country}}</div>
-  <div><span class="field">Description:</span>{{' ' + movie.description}}</div>
+<div class="descDiv1" ng-repeat="movie in heroInfo track by $index" ng-show="clickH">
+  <div class="header1 three1">
+    <h2>{{'"' + movie.name + '"'}}</h2>
+    <p>{{movie.year}}, {{movie.country}}</p>
+  </div>
+  <div class="leftDiv1"><img  ng-src="{{movie.cover}}"></div>
+  <p class="description1">
+    {{'"' + movie.description + '"'}}
+  </p>
 </div>
-
